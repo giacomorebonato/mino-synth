@@ -9,6 +9,7 @@
     "gatsby-image": "^2.2.5",
     "gatsby-plugin-manifest": "^2.2.2",
     "gatsby-plugin-offline": "^2.2.2",
+    "gatsby-plugin-postcss": "^2.1.2",
     "gatsby-plugin-react-helmet": "^3.1.1",
     "gatsby-plugin-sharp": "^2.2.4",
     "gatsby-source-filesystem": "^2.1.4",
@@ -16,10 +17,21 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "styled-components": "^4.3.2",
+    "tailwindcss": "^1.1.0",
+    "tone": "^13.4.9"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "@fullhuman/postcss-purgecss": "^1.2.0",
+    "@types/tone": "https://github.com/Tonejs/TypeScript.git",
+    "autoprefixer": "^9.6.1",
+    "cssnano": "^4.1.10",
+    "gatsby-plugin-purgecss": "^4.0.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "standard": "^13.0.1",
+    "typescript": "^3.5.3"
   },
   "keywords": [
     "gatsby"
@@ -31,7 +43,8 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "standard && jest",
+    "tsc": "tsc"
   },
   "repository": {
     "type": "git",
